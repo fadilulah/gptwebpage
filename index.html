@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+    body, html {
+      height: 100%;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(0,0,0,0.6);
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    nav ul li {
+      margin-left: 1.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .hero p {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+    }
+    .hero button {
+      padding: 0.75rem 1.5rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .features, .video-section, .form-section {
+      background-color: #f9f9f9;
+    }
+    .features h2, .video-section h2, .form-section h2 {
+      margin-bottom: 2rem;
+    }
+    .features .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .features .grid div {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .video-section video {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+    .form-section form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .form-section input, .form-section textarea, .form-section button {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">MyBrand</div>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Welcome to MyBrand</h1>
+      <p>Innovative solutions for modern problems</p>
+      <button>Get Started</button>
+    </div>
+  </header>
+
+  <section class="features" id="features">
+    <h2>Our Features</h2>
+    <div class="grid">
+      <div>
+        <h3>Feature One</h3>
+        <p>High-quality services to help you grow your business efficiently.</p>
+      </div>
+      <div>
+        <h3>Feature Two</h3>
+        <p>Easy-to-use tools that simplify complex tasks and workflows.</p>
+      </div>
+      <div>
+        <h3>Feature Three</h3>
+        <p>Scalable and secure architecture you can rely on.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section" id="videos">
+    <h2>Watch Our Introduction</h2>
+    <video controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section class="form-section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MyBrand. All rights reserved.</p>
+  </footer>
+</body>
+</html>
